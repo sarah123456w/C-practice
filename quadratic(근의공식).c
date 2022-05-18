@@ -41,7 +41,7 @@ int quadratic(int a, int b, int c, double* root1_ptr, double* root2_ptr) {
         
     if((a!=0)||(b!=0))
         if((b*b-4*a*c)==0){
-            * root1_ptr=-b/2*a;
+            * root1_ptr=-b/(2*a);
             return 1;
     }
     
