@@ -28,7 +28,7 @@ void find_two_largest(int arr[], int* largest_ptr, int* second_largest_ptr) {
     int n=0,i=0;
 
     for(i=0;i<10;i++){//최대값 찾기
-        if(arr[i]>max){
+        if(arr[i]>=max){
             secondmax=max;
             max=arr[i];
             n=i;
@@ -44,12 +44,5 @@ void find_two_largest(int arr[], int* largest_ptr, int* second_largest_ptr) {
     }
     *largest_ptr=max;
     *second_largest_ptr=secondmax;
-
-    for(i=0;i<10;i++){//같은 최대값 2개인 경우
-        if(i!=n)
-            if(arr[i]==max)
-                *second_largest_ptr=max;  
-    }
-
 
 }
